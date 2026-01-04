@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+
+  --color-accent-50: #fdf4ff;
+  --color-accent-100: #fae8ff;
+  --color-accent-200: #f5d0fe;
+  --color-accent-300: #f0abfc;
+  --color-accent-400: #e879f9;
+  --color-accent-500: #d946ef;
+  --color-accent-600: #c026d3;
+  --color-accent-700: #a21caf;
+  --color-accent-800: #86198f;
+  --color-accent-900: #701a75;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-900 text-slate-100 antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 hover:border-primary-500 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-xl hover:shadow-primary-500/10 hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .complexity-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .complexity-constant {
+    @apply bg-green-500/20 text-green-400;
+  }
+
+  .complexity-logarithmic {
+    @apply bg-emerald-500/20 text-emerald-400;
+  }
+
+  .complexity-linear {
+    @apply bg-blue-500/20 text-blue-400;
+  }
+
+  .complexity-linearithmic {
+    @apply bg-cyan-500/20 text-cyan-400;
+  }
+
+  .complexity-quadratic {
+    @apply bg-yellow-500/20 text-yellow-400;
+  }
+
+  .complexity-exponential {
+    @apply bg-orange-500/20 text-orange-400;
+  }
+
+  .complexity-factorial {
+    @apply bg-red-500/20 text-red-400;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors duration-200;
+  }
+
+  .nav-link.active {
+    @apply bg-primary-600/20 text-primary-400 border-l-2 border-primary-500;
+  }
+
+  .code-block {
+    @apply bg-slate-950 rounded-lg p-4 font-mono text-sm overflow-x-auto;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-white mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg font-semibold text-slate-300 mb-2;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Prism code highlighting adjustments */
+.prism-code {
+  background: transparent !important;
+}

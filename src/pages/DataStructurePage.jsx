@@ -15,7 +15,9 @@ import {
   Lightbulb,
   Wrench,
   BookOpen,
-  Sparkles
+  Sparkles,
+  ExternalLink,
+  Code2
 } from 'lucide-react';
 import { dataStructures } from '../data/dataStructures';
 import { Card, CardTitle, CardDescription } from '../components/Card';
@@ -206,6 +208,66 @@ export default function DataStructurePage() {
           </ul>
         </Card>
       </Section>
+
+      {/* LeetCode Practice Problems */}
+      {ds.leetcodeProblems && (
+        <Section>
+          <SectionTitle className="flex items-center gap-2">
+            <Code2 className="w-5 h-5 text-orange-400" />
+            LeetCode Practice Problems
+          </SectionTitle>
+          <Card>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="border-b border-slate-700">
+                    <th className="pb-3 text-slate-400 font-medium">#</th>
+                    <th className="pb-3 text-slate-400 font-medium">Problem</th>
+                    <th className="pb-3 text-slate-400 font-medium">Difficulty</th>
+                    <th className="pb-3 text-slate-400 font-medium text-right">Link</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-700/50">
+                  {ds.leetcodeProblems.map((problem) => (
+                    <tr key={problem.id} className="hover:bg-slate-700/30 transition-colors">
+                      <td className="py-3 text-slate-500 font-mono text-sm">{problem.id}</td>
+                      <td className="py-3 text-white font-medium">{problem.name}</td>
+                      <td className="py-3">
+                        <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                          problem.difficulty === 'Easy'
+                            ? 'bg-green-500/20 text-green-400'
+                            : problem.difficulty === 'Medium'
+                            ? 'bg-yellow-500/20 text-yellow-400'
+                            : 'bg-red-500/20 text-red-400'
+                        }`}>
+                          {problem.difficulty}
+                        </span>
+                      </td>
+                      <td className="py-3 text-right">
+                        <a
+                          href={problem.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-primary-400 hover:text-primary-300 transition-colors"
+                        >
+                          <span className="hidden sm:inline">Solve</span>
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-4 pt-4 border-t border-slate-700">
+              <p className="text-sm text-slate-400">
+                Start with Easy problems, then progress to Medium and Hard.
+                Focus on understanding patterns rather than memorizing solutions.
+              </p>
+            </div>
+          </Card>
+        </Section>
+      )}
 
       {/* Code Example */}
       <Section>

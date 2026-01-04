@@ -35,6 +35,18 @@ export const dataStructures = {
       'Modern CPUs are optimized for array traversal due to cache prefetching',
       'Dynamic arrays (like ArrayList) typically grow by 1.5x or 2x when full'
     ],
+    leetcodeProblems: [
+      { id: 1, name: 'Two Sum', difficulty: 'Easy', url: 'https://leetcode.com/problems/two-sum/' },
+      { id: 121, name: 'Best Time to Buy and Sell Stock', difficulty: 'Easy', url: 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/' },
+      { id: 217, name: 'Contains Duplicate', difficulty: 'Easy', url: 'https://leetcode.com/problems/contains-duplicate/' },
+      { id: 53, name: 'Maximum Subarray', difficulty: 'Medium', url: 'https://leetcode.com/problems/maximum-subarray/' },
+      { id: 238, name: 'Product of Array Except Self', difficulty: 'Medium', url: 'https://leetcode.com/problems/product-of-array-except-self/' },
+      { id: 15, name: '3Sum', difficulty: 'Medium', url: 'https://leetcode.com/problems/3sum/' },
+      { id: 11, name: 'Container With Most Water', difficulty: 'Medium', url: 'https://leetcode.com/problems/container-with-most-water/' },
+      { id: 33, name: 'Search in Rotated Sorted Array', difficulty: 'Medium', url: 'https://leetcode.com/problems/search-in-rotated-sorted-array/' },
+      { id: 152, name: 'Maximum Product Subarray', difficulty: 'Medium', url: 'https://leetcode.com/problems/maximum-product-subarray/' },
+      { id: 42, name: 'Trapping Rain Water', difficulty: 'Hard', url: 'https://leetcode.com/problems/trapping-rain-water/' }
+    ],
     codeExample: `// JavaScript Array Operations
 const arr = [1, 2, 3, 4, 5];
 
@@ -104,6 +116,18 @@ function twoSum(arr, target) {
       'Linked lists were invented around 1955-1956 at RAND Corporation',
       'The garbage collector in many languages uses linked lists internally',
       'Doubly linked lists use 2x the pointer memory but enable O(1) deletion'
+    ],
+    leetcodeProblems: [
+      { id: 206, name: 'Reverse Linked List', difficulty: 'Easy', url: 'https://leetcode.com/problems/reverse-linked-list/' },
+      { id: 21, name: 'Merge Two Sorted Lists', difficulty: 'Easy', url: 'https://leetcode.com/problems/merge-two-sorted-lists/' },
+      { id: 141, name: 'Linked List Cycle', difficulty: 'Easy', url: 'https://leetcode.com/problems/linked-list-cycle/' },
+      { id: 876, name: 'Middle of the Linked List', difficulty: 'Easy', url: 'https://leetcode.com/problems/middle-of-the-linked-list/' },
+      { id: 19, name: 'Remove Nth Node From End of List', difficulty: 'Medium', url: 'https://leetcode.com/problems/remove-nth-node-from-end-of-list/' },
+      { id: 143, name: 'Reorder List', difficulty: 'Medium', url: 'https://leetcode.com/problems/reorder-list/' },
+      { id: 142, name: 'Linked List Cycle II', difficulty: 'Medium', url: 'https://leetcode.com/problems/linked-list-cycle-ii/' },
+      { id: 148, name: 'Sort List', difficulty: 'Medium', url: 'https://leetcode.com/problems/sort-list/' },
+      { id: 138, name: 'Copy List with Random Pointer', difficulty: 'Medium', url: 'https://leetcode.com/problems/copy-list-with-random-pointer/' },
+      { id: 23, name: 'Merge k Sorted Lists', difficulty: 'Hard', url: 'https://leetcode.com/problems/merge-k-sorted-lists/' }
     ],
     codeExample: `// JavaScript Linked List Implementation
 class ListNode {
@@ -205,6 +229,18 @@ function reverseList(head) {
       'The call stack is why recursion works in programming',
       'Stack overflow errors occur when the call stack exceeds its limit',
       'Browsers use stacks to manage page navigation history'
+    ],
+    leetcodeProblems: [
+      { id: 20, name: 'Valid Parentheses', difficulty: 'Easy', url: 'https://leetcode.com/problems/valid-parentheses/' },
+      { id: 155, name: 'Min Stack', difficulty: 'Medium', url: 'https://leetcode.com/problems/min-stack/' },
+      { id: 150, name: 'Evaluate Reverse Polish Notation', difficulty: 'Medium', url: 'https://leetcode.com/problems/evaluate-reverse-polish-notation/' },
+      { id: 739, name: 'Daily Temperatures', difficulty: 'Medium', url: 'https://leetcode.com/problems/daily-temperatures/' },
+      { id: 496, name: 'Next Greater Element I', difficulty: 'Easy', url: 'https://leetcode.com/problems/next-greater-element-i/' },
+      { id: 394, name: 'Decode String', difficulty: 'Medium', url: 'https://leetcode.com/problems/decode-string/' },
+      { id: 71, name: 'Simplify Path', difficulty: 'Medium', url: 'https://leetcode.com/problems/simplify-path/' },
+      { id: 84, name: 'Largest Rectangle in Histogram', difficulty: 'Hard', url: 'https://leetcode.com/problems/largest-rectangle-in-histogram/' },
+      { id: 735, name: 'Asteroid Collision', difficulty: 'Medium', url: 'https://leetcode.com/problems/asteroid-collision/' },
+      { id: 224, name: 'Basic Calculator', difficulty: 'Hard', url: 'https://leetcode.com/problems/basic-calculator/' }
     ],
     codeExample: `// JavaScript Stack Implementation
 class Stack {
@@ -310,6 +346,18 @@ class MinStack {
       'Message queues like RabbitMQ and Kafka process billions of messages daily',
       'The event loop in JavaScript uses a task queue',
       'Circular queues prevent memory waste from dequeue operations'
+    ],
+    leetcodeProblems: [
+      { id: 232, name: 'Implement Queue using Stacks', difficulty: 'Easy', url: 'https://leetcode.com/problems/implement-queue-using-stacks/' },
+      { id: 225, name: 'Implement Stack using Queues', difficulty: 'Easy', url: 'https://leetcode.com/problems/implement-stack-using-queues/' },
+      { id: 622, name: 'Design Circular Queue', difficulty: 'Medium', url: 'https://leetcode.com/problems/design-circular-queue/' },
+      { id: 933, name: 'Number of Recent Calls', difficulty: 'Easy', url: 'https://leetcode.com/problems/number-of-recent-calls/' },
+      { id: 346, name: 'Moving Average from Data Stream', difficulty: 'Easy', url: 'https://leetcode.com/problems/moving-average-from-data-stream/' },
+      { id: 239, name: 'Sliding Window Maximum', difficulty: 'Hard', url: 'https://leetcode.com/problems/sliding-window-maximum/' },
+      { id: 641, name: 'Design Circular Deque', difficulty: 'Medium', url: 'https://leetcode.com/problems/design-circular-deque/' },
+      { id: 862, name: 'Shortest Subarray with Sum at Least K', difficulty: 'Hard', url: 'https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/' },
+      { id: 353, name: 'Design Snake Game', difficulty: 'Medium', url: 'https://leetcode.com/problems/design-snake-game/' },
+      { id: 362, name: 'Design Hit Counter', difficulty: 'Medium', url: 'https://leetcode.com/problems/design-hit-counter/' }
     ],
     codeExample: `// JavaScript Queue Implementation
 class Queue {
@@ -419,6 +467,18 @@ class PriorityQueue {
       'B-Trees are used in every major database system',
       'A tree with n nodes has exactly n-1 edges'
     ],
+    leetcodeProblems: [
+      { id: 104, name: 'Maximum Depth of Binary Tree', difficulty: 'Easy', url: 'https://leetcode.com/problems/maximum-depth-of-binary-tree/' },
+      { id: 226, name: 'Invert Binary Tree', difficulty: 'Easy', url: 'https://leetcode.com/problems/invert-binary-tree/' },
+      { id: 100, name: 'Same Tree', difficulty: 'Easy', url: 'https://leetcode.com/problems/same-tree/' },
+      { id: 102, name: 'Binary Tree Level Order Traversal', difficulty: 'Medium', url: 'https://leetcode.com/problems/binary-tree-level-order-traversal/' },
+      { id: 98, name: 'Validate Binary Search Tree', difficulty: 'Medium', url: 'https://leetcode.com/problems/validate-binary-search-tree/' },
+      { id: 236, name: 'Lowest Common Ancestor of a Binary Tree', difficulty: 'Medium', url: 'https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/' },
+      { id: 105, name: 'Construct Binary Tree from Preorder and Inorder', difficulty: 'Medium', url: 'https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/' },
+      { id: 230, name: 'Kth Smallest Element in a BST', difficulty: 'Medium', url: 'https://leetcode.com/problems/kth-smallest-element-in-a-bst/' },
+      { id: 124, name: 'Binary Tree Maximum Path Sum', difficulty: 'Hard', url: 'https://leetcode.com/problems/binary-tree-maximum-path-sum/' },
+      { id: 297, name: 'Serialize and Deserialize Binary Tree', difficulty: 'Hard', url: 'https://leetcode.com/problems/serialize-and-deserialize-binary-tree/' }
+    ],
     codeExample: `// JavaScript Binary Tree Implementation
 class TreeNode {
   constructor(val) {
@@ -512,6 +572,18 @@ function maxDepth(root) {
       'Heaps are the backbone of priority queues in all major languages',
       'Building a heap is O(n), not O(n log n) due to mathematical proof',
       'JavaScript doesn\'t have a built-in heap - you must implement it!'
+    ],
+    leetcodeProblems: [
+      { id: 215, name: 'Kth Largest Element in an Array', difficulty: 'Medium', url: 'https://leetcode.com/problems/kth-largest-element-in-an-array/' },
+      { id: 347, name: 'Top K Frequent Elements', difficulty: 'Medium', url: 'https://leetcode.com/problems/top-k-frequent-elements/' },
+      { id: 703, name: 'Kth Largest Element in a Stream', difficulty: 'Easy', url: 'https://leetcode.com/problems/kth-largest-element-in-a-stream/' },
+      { id: 1046, name: 'Last Stone Weight', difficulty: 'Easy', url: 'https://leetcode.com/problems/last-stone-weight/' },
+      { id: 973, name: 'K Closest Points to Origin', difficulty: 'Medium', url: 'https://leetcode.com/problems/k-closest-points-to-origin/' },
+      { id: 295, name: 'Find Median from Data Stream', difficulty: 'Hard', url: 'https://leetcode.com/problems/find-median-from-data-stream/' },
+      { id: 621, name: 'Task Scheduler', difficulty: 'Medium', url: 'https://leetcode.com/problems/task-scheduler/' },
+      { id: 373, name: 'Find K Pairs with Smallest Sums', difficulty: 'Medium', url: 'https://leetcode.com/problems/find-k-pairs-with-smallest-sums/' },
+      { id: 767, name: 'Reorganize String', difficulty: 'Medium', url: 'https://leetcode.com/problems/reorganize-string/' },
+      { id: 23, name: 'Merge k Sorted Lists', difficulty: 'Hard', url: 'https://leetcode.com/problems/merge-k-sorted-lists/' }
     ],
     codeExample: `// JavaScript Min Heap Implementation
 class MinHeap {
@@ -623,6 +695,18 @@ function findKLargest(nums, k) {
       'A good hash function distributes keys uniformly',
       'Cryptographic hash functions are designed to be one-way'
     ],
+    leetcodeProblems: [
+      { id: 1, name: 'Two Sum', difficulty: 'Easy', url: 'https://leetcode.com/problems/two-sum/' },
+      { id: 49, name: 'Group Anagrams', difficulty: 'Medium', url: 'https://leetcode.com/problems/group-anagrams/' },
+      { id: 242, name: 'Valid Anagram', difficulty: 'Easy', url: 'https://leetcode.com/problems/valid-anagram/' },
+      { id: 146, name: 'LRU Cache', difficulty: 'Medium', url: 'https://leetcode.com/problems/lru-cache/' },
+      { id: 560, name: 'Subarray Sum Equals K', difficulty: 'Medium', url: 'https://leetcode.com/problems/subarray-sum-equals-k/' },
+      { id: 380, name: 'Insert Delete GetRandom O(1)', difficulty: 'Medium', url: 'https://leetcode.com/problems/insert-delete-getrandom-o1/' },
+      { id: 128, name: 'Longest Consecutive Sequence', difficulty: 'Medium', url: 'https://leetcode.com/problems/longest-consecutive-sequence/' },
+      { id: 76, name: 'Minimum Window Substring', difficulty: 'Hard', url: 'https://leetcode.com/problems/minimum-window-substring/' },
+      { id: 3, name: 'Longest Substring Without Repeating Characters', difficulty: 'Medium', url: 'https://leetcode.com/problems/longest-substring-without-repeating-characters/' },
+      { id: 438, name: 'Find All Anagrams in a String', difficulty: 'Medium', url: 'https://leetcode.com/problems/find-all-anagrams-in-a-string/' }
+    ],
     codeExample: `// JavaScript Hash Table Implementation
 class HashTable {
   constructor(size = 53) {
@@ -726,6 +810,18 @@ function groupAnagrams(strs) {
       'Facebook\'s social graph has billions of nodes and trillions of edges',
       'PageRank (Google\'s algorithm) treats the web as a graph',
       'The "Six Degrees of Separation" is a graph theory concept'
+    ],
+    leetcodeProblems: [
+      { id: 200, name: 'Number of Islands', difficulty: 'Medium', url: 'https://leetcode.com/problems/number-of-islands/' },
+      { id: 133, name: 'Clone Graph', difficulty: 'Medium', url: 'https://leetcode.com/problems/clone-graph/' },
+      { id: 207, name: 'Course Schedule', difficulty: 'Medium', url: 'https://leetcode.com/problems/course-schedule/' },
+      { id: 417, name: 'Pacific Atlantic Water Flow', difficulty: 'Medium', url: 'https://leetcode.com/problems/pacific-atlantic-water-flow/' },
+      { id: 210, name: 'Course Schedule II', difficulty: 'Medium', url: 'https://leetcode.com/problems/course-schedule-ii/' },
+      { id: 743, name: 'Network Delay Time', difficulty: 'Medium', url: 'https://leetcode.com/problems/network-delay-time/' },
+      { id: 684, name: 'Redundant Connection', difficulty: 'Medium', url: 'https://leetcode.com/problems/redundant-connection/' },
+      { id: 127, name: 'Word Ladder', difficulty: 'Hard', url: 'https://leetcode.com/problems/word-ladder/' },
+      { id: 269, name: 'Alien Dictionary', difficulty: 'Hard', url: 'https://leetcode.com/problems/alien-dictionary/' },
+      { id: 787, name: 'Cheapest Flights Within K Stops', difficulty: 'Medium', url: 'https://leetcode.com/problems/cheapest-flights-within-k-stops/' }
     ],
     codeExample: `// JavaScript Graph Implementation (Adjacency List)
 class Graph {
@@ -850,6 +946,18 @@ function topologicalSort(numCourses, prerequisites) {
       'The name "Trie" comes from reTRIEval',
       'Google\'s search autocomplete uses trie-like structures',
       'Tries can be compressed using techniques like Patricia tries'
+    ],
+    leetcodeProblems: [
+      { id: 208, name: 'Implement Trie (Prefix Tree)', difficulty: 'Medium', url: 'https://leetcode.com/problems/implement-trie-prefix-tree/' },
+      { id: 211, name: 'Design Add and Search Words Data Structure', difficulty: 'Medium', url: 'https://leetcode.com/problems/design-add-and-search-words-data-structure/' },
+      { id: 212, name: 'Word Search II', difficulty: 'Hard', url: 'https://leetcode.com/problems/word-search-ii/' },
+      { id: 14, name: 'Longest Common Prefix', difficulty: 'Easy', url: 'https://leetcode.com/problems/longest-common-prefix/' },
+      { id: 648, name: 'Replace Words', difficulty: 'Medium', url: 'https://leetcode.com/problems/replace-words/' },
+      { id: 677, name: 'Map Sum Pairs', difficulty: 'Medium', url: 'https://leetcode.com/problems/map-sum-pairs/' },
+      { id: 720, name: 'Longest Word in Dictionary', difficulty: 'Medium', url: 'https://leetcode.com/problems/longest-word-in-dictionary/' },
+      { id: 1268, name: 'Search Suggestions System', difficulty: 'Medium', url: 'https://leetcode.com/problems/search-suggestions-system/' },
+      { id: 421, name: 'Maximum XOR of Two Numbers in an Array', difficulty: 'Medium', url: 'https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/' },
+      { id: 472, name: 'Concatenated Words', difficulty: 'Hard', url: 'https://leetcode.com/problems/concatenated-words/' }
     ],
     codeExample: `// JavaScript Trie Implementation
 class TrieNode {
